@@ -27,15 +27,16 @@ class ProfileIn(Schema):
     email:str = None
     polis:str = None
     policlinika:str = None
-    isFizikPerson:bool = None
-    dog1:bool = None
-    dog2:bool = None
-    isAmb:bool = None
+    isFizikPerson:str = None
+    dog1:str = None
+    dog2:str = None
+    isAmb:str = None
     dms_num:str = None
     dms_org:str = None
     dms_inn:str = None
 
-
+class ProfileDel(Schema):
+    patient_number:str
 
 class Error(Schema):
     message: str

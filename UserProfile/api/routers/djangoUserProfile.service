@@ -1,0 +1,11 @@
+[Unit]
+Description=userprofile_django
+After=network.target
+
+[Service]
+WorkingDirectory=/home/icdcroot_user/PythonProjects/djanoUserProfile/UserProfile/
+ExecStart=/home/icdcroot_user/PythonProjects/djanoUserProfile/venv/bin/python3 manage.py runserver 0.0.0.0:8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
